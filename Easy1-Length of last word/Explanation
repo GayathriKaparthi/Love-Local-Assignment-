@@ -1,0 +1,13 @@
+ALGORITHM:
+
+1) Get input from the user
+2) Split the string
+3) Store the words in list
+4) Get the the length of the last word
+
+LOGIC:
+
+list1=list(str.split(" "))
+    return len(list1[-1])
+str=input()
+
