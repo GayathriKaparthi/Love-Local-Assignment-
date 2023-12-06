@@ -1,1 +1,20 @@
+ALGORITHM:
 
+1) Input from  user to get number of rows
+2) Declaring ana empty list to store the values
+3) Using for loop which iterates through 0 to n-1
+4) Creating a new row by appending a list of '1's of length 'row+1'
+5) For each new row update the values based on the previous row's elements sum
+6) By using formula row[j]=triangle[i-1][j-1]+triangle[i-1][j]
+7) Return the generated pascals triangle as a list of lists
+
+LOGIC:
+
+triangle=[]  //empty list
+    for i in range(num_rows):
+        row=[1]*(i+1) //appending 1 to the rows
+        if i>=2:
+            for j in range(1,i):
+                row[j]=triangle[i-1][j-1]+triangle[i-1][j] //add the elements of previous row if len(row)>2
+        triangle.append(row)
+    return triangle
