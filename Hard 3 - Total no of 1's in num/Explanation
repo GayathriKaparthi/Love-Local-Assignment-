@@ -1,0 +1,16 @@
+ALGORITHM:
+
+1) Get input from user
+2) Intialize the count to 0
+3) Convert the number into string
+4) count the number of 1's present in the given range of numbers
+5)  Return the output
+
+LOGIC:
+
+count=0
+    for num in range(1,n+1):
+        str1=str(num)
+        count+=str1.count("1")
+    return count
+
