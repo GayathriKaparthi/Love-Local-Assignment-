@@ -1,0 +1,23 @@
+ALGORITHM:
+
+1) import counter from collections
+2) Get input from user
+3) divide the length of input with 3
+4) store the result in variable k
+5) create an empty list
+6) if the count of any number from input is greater than k
+7) Then return the specific numbers
+8) if the input doesn't contain a number which count is greater than k
+9) return the same input
+
+LOGIC:
+
+n=len(arr)
+    k=n//3
+    counts=Counter(arr)
+    result=[]
+    for num,counts in counts.items():
+        if counts>k:
+            result.append(num)
+    return result
+
